@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v1">
+    <h3>{{ user }}</h3>
+    <h2>{{ message }}</h2>
+</div>
+
+
+<script>
+    new Vue({
+        el:"#v1",
+        data:{
+            user:"铁子们",
+            message:"Welcome to beijing",
+        }
+    })
+</script>
+</body>
+</html>
