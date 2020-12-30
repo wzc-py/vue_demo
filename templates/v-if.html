@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <h3 v-if="false">吃饭去</h3>
+    <h3 v-else>不去吃</h3>
+
+    <h3 v-else-if="true">快走啦</h3>
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {}
+    })
+</script>
+</body>
+</html>
