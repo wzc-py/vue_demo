@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    {{msg.toUpperCase()}}
+    {{num / 5}}
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data:{
+            msg:"hahhaha",
+            num: 100
+        }
+    })
+</script>
+</body>
+</html>

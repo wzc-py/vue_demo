@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="vue_demo" />
       </list>
     </option>
   </component>
@@ -82,11 +83,22 @@
       <option name="presentableId" value="Default" />
       <updated>1609318722564</updated>
       <workItem from="1609318725489" duration="2730000" />
-      <workItem from="1609321703566" duration="3427000" />
+      <workItem from="1609321703566" duration="4845000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
