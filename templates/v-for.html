@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <h4>{{user.name}}:{{user.age}}工资:{{user.salary}}</h4>
+    <span v-for="(value,key,index) in user">
+        {{key}}:{{value}}=={{index}}
+    </span>
+
+    <ul>
+        <li v-for="(city,index) in adrr">
+            {{index+1}}:{{city}}
+        </li>
+    </ul>
+
+    <ol>
+        <li v-for="(user,index) in user_list":key="user.id">
+<!--            {{index+1}}:{{user.name}}-->
+            {{user.name}}
+        </li>
+    </ol>
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            user:{name:"土豆",age:18,salary:10000},
+            adrr:["北京","河南","山东"],
+            user_list: [
+                {id:1,name:"土豆",age:18,salary:10000},
+                {id:1,name:"茄子",age:28,salary:5000},
+                {id:1,name:"香蕉",age:25,salary:20000},
+            ]
+        }
+    })
+</script>
+</body>
+</html>
