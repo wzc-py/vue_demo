@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <p>{{num}}</p>
+    <input type="button" value="点我" @click="c_num(20)">
+    <p @click="c_me">点我</p>
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            num:10,
+        },
+        methods:{
+            c_num(n){
+                // this.num ++;
+                this.num = n;
+            },
+            c_me(){
+              console.log(event)
+            },
+        }
+    })
+</script>
+</body>
+</html>
