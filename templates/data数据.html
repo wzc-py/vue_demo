@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <h2>{{name}}</h2>
+    <h3>年龄：{{age+1}}</h3>
+    <h4>用户名：{{user.username}}       密码：{{user.pwd}}</h4>
+    <h5>{{arr[2]}}</h5>
+    <h5>{{user_list[2].name}}</h5>
+
+</div>
+
+<script>
+    new Vue({
+        el:"#v2",
+        data:{
+            name:"铁柱",
+            age: 18,
+            user:{"username": "土豆","pwd": "123"},
+            arr:["河南","信阳","固始"],
+            user_list:[
+                {"name": "土豆","pwd": "123"},
+                {"name": "茄子","pwd": "123"},
+                {"name": "香蕉","pwd": "123"},
+            ]
+        },
+    })
+</script>
+</body>
+</html>
