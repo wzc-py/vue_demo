@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <h2>{{msg}}</h2>
+    <h2 v-show="false">{{msg}}</h2>
+    <hr>
+    <input type="button" value="点我呗" @click="showmsg">
+    <h2 v-show="isshow">{{msg}}</h2>
+
+    <input type="button" value="还点我" @click="change_n">
+    <h3 v-show="num>=30">你老了</h3>
+
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            msg:"爱吃小布丁",
+            isshow:true,
+            num :28,
+        },
+        methods:{
+            showmsg(){
+                this.isshow = !this.isshow;
+            },
+            change_n(){
+                this.num ++;
+            }
+        },
+    })
+</script>
+</body>
+</html>
