@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <h3>我有{{num}}万！</h3>
+    <input type="button" value="点我有惊喜" @click="change_m">
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            num:100,
+        },
+        methods:{
+            change_m:function (){
+                this.num --;
+            }
+        }
+    })
+</script>
+</body>
+</html>
