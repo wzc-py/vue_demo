@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+</head>
+<body>
+<div id="v2">
+    <p @click="low_n">{{num}}</p>
+    十位：<input type="text" v-model="shi">
+    个位：<input type="text" v-model="ge">
+<!--    结果：<b>{{shi*10 + +ge}}</b>-->
+    结果： <b>{{result}}</b>
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            num: 98,
+            shi:"",
+            ge:"",
+        },
+        methods:{
+            low_n(){
+                this.num -=5;
+            },
+        },
+        computed:{
+            result(){
+                return this.shi*10 + +this.ge;
+            },
+        },
+    })
+</script>
+</body>
+</html>
