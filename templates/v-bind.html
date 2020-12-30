@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.min.js"></script>
+    <style>
+        .a{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<div id="v2">
+<!--    <img v-bind:src="addr" v-bind:title="name" v-bind:class="{a:showcss}" alt="">-->
+    <input type="button" value="点我切换样式" @click="change_css">
+    <input type="button" value="点我换图片" @click="change_t">
+    <p><img :src="addr" title="name" :class="{a:showcss}" alt=""></p>
+
+</div>
+
+<script>
+    new Vue({
+        el: "#v2",
+        data: {
+            name:"张子枫",
+            addr:"https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=414859022,1892274622&fm=26&gp=0.jpg",
+            showcss:true,
+        },
+        methods:{
+            change_css(){
+                this.showcss = !this.showcss;
+            },
+            change_t(){
+                this.addr = "https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1608693271,1926144353&fm=26&gp=0.jpg";
+            },
+        }
+    })
+</script>
+</body>
+</html>
